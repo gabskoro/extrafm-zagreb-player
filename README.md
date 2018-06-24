@@ -1,4 +1,4 @@
-##ExtraFM Zagreb Player
+## ExtraFM Zagreb Player
 
 A simple music player for the Croatian radio station called **ExtraFM**.
 
