@@ -1,0 +1,16 @@
+<div class="widget-player">
+  <div class="widget-player__avatar"></div>
+
+  <song-info
+    class="widget-player__song-info"
+    :current-song="currentSongInfo">
+  </song-info>
+
+  <play-button
+    class="widget-player__play-button"
+    :player="player"
+    @on-play-toggle="onPlayToggle()">
+  </play-button>
+
+  <img class="widget-player__logo" src="~assets/images/logo.png" />
+</div>

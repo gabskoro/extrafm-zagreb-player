@@ -1,0 +1,23 @@
+@import '~assets/stylesheets/colors';
+
+.song-info {
+  &__title {
+    font-size: 14px;
+    font-weight: 400;
+    display: inline-block;
+    background-color: $dark-color;
+    color: $light-color;
+    padding: 5px 15px 5px 50px;
+    margin: 0;
+  }
+
+  &__currently-playing {
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0;
+    padding: 8px 15px 8px 50px;
+    min-height: 18px;
+    background-color: $main-color;
+    color: $light-color;
+  }
+}

@@ -1,0 +1,8 @@
+<div>
+  <button
+    :class="{ 'play-button--is-playing': isPlaying }"
+    class="play-button"
+    @click="toggleMusic()">
+    {{ playingText }}
+  </button>
+</div>

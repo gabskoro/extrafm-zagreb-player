@@ -1,0 +1,24 @@
+@import '~assets/stylesheets/colors';
+
+.play-button {
+  font-weight: 700;
+  background-color: $main-color;
+  color: $light-color;
+  font-size: 24px;
+  outline: none;
+  padding: 12px 60px 12px 20px;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0px 1px 5px $shadow-color;
+  cursor: pointer;
+  background: {
+    image: url('~assets/images/icon-play.svg');
+    size: 25px 25px;
+    position: right 20px center;
+    repeat: no-repeat;
+  }
+
+  &--is-playing {
+    background-image: url('~assets/images/icon-pause.svg');
+  }
+}
