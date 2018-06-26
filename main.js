@@ -12,7 +12,7 @@ function createMainWindow() {
     height: 242,
     resizable: false,
     maximizable: false,
-    icon: path.join(__dirname, 'app', 'assets', 'images', 'icon.icns')
+    icon: path.join(__dirname, 'app', 'assets', 'images', 'icon.png')
   });
 
   window.loadURL(Url.format({
