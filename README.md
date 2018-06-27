@@ -4,9 +4,9 @@ A simple music player for the Croatian radio station called **ExtraFM**.
 
 App is available on:
 
-* MacOS - [ExtraFM Zagreb-darwin-x64](https://github.com/gabskoro/extrafm-zagreb-player/raw/master/desktop-apps/ExtraFM%20Zagreb-darwin-x64.zip)
-* Linux -
-* Windows -
+* MacOS - [ExtraFM Zagreb-darwin-x64](https://gabskoro.page.link/qL6j)
+* Linux - [ExtraFM Zagreb-linux-x64](https://gabskoro.page.link/geWN)
+* Windows - [ExtraFM Zagreb-win32-x64](https://gabskoro.page.link/3Q85)
 
 
 
