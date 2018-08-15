@@ -31,7 +31,7 @@ const WidgetPlayerComponent = Vue.component('widgetPlayer', {
       html5: true
     });
 
-    this.setCurrentSongInfo();
+    this.prepareCurrentSongInfo();
   },
 
   methods: {
@@ -45,9 +45,8 @@ const WidgetPlayerComponent = Vue.component('widgetPlayer', {
     },
 
     prepareCurrentSongInfo: function() {
-      setInterval(() => {
-        this.setCurrentSongInfo();
-      }, Config.CURRENT_SONG_REFRESH_RATE);
+      this.setCurrentSongInfo();
+      setInterval(this.setCurrentSongInfo, Config.CURRENT_SONG_REFRESH_RATE);
     },
 
     setCurrentSongInfo: function() {
