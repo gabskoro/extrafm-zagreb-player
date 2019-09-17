@@ -3,6 +3,9 @@ const { app, BrowserWindow } = require('electron');
 const Url = require('url');
 const path = require('path');
 
+// we just assume if the arguments exist it's run in a dev mode
+const envDev = process.argv[2];
+
 // global reference to mainWindow (necessary to prevent window from being garbage collected)
 let mainWindow;
 
@@ -10,10 +13,17 @@ function createMainWindow() {
   window = new BrowserWindow({
     width: 800,
     height: 242,
-    resizable: false,
+    resizable: !!envDev,
     maximizable: false,
-    icon: path.join(__dirname, 'app', 'assets', 'images', 'icon.png')
+    icon: path.join(__dirname, 'app', 'assets', 'images', 'icon.png'),
+    webPreferences: {
+      webSecurity: false
+    }
   });
+
+  if (envDev) {
+    window.webContents.openDevTools();
+  }
 
   window.loadURL(Url.format({
     pathname: path.join(__dirname, 'dist', 'index.html'),

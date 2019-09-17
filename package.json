@@ -8,7 +8,7 @@
     "dev": "webpack-dev-server --watch --env=dev",
     "build": "yarn clean && webpack --env=prod",
     "clean": "rm -rf dist/",
-    "startapp": "yarn build && electron .",
+    "startapp": "yarn build && electron . --env=dev",
     "packapp": "yarn build && electron-packager . --overwrite --icon=./app/assets/images/icon.icns",
     "packappall": "yarn packapp --platform=darwin,linux,win32"
   },
