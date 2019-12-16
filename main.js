@@ -15,10 +15,7 @@ function createMainWindow() {
     height: 242,
     resizable: !!envDev,
     maximizable: false,
-    icon: path.join(__dirname, 'app', 'assets', 'images', 'icon.png'),
-    webPreferences: {
-      webSecurity: false
-    }
+    icon: path.join(__dirname, 'app', 'assets', 'images', 'icon.png')
   });
 
   if (envDev) {
