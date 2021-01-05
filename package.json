@@ -13,7 +13,7 @@
     "packappall": "yarn packapp --platform=darwin,linux,win32"
   },
   "dependencies": {
-    "axios": "0.19.2",
+    "axios": "0.21.1",
     "howler": "2.2.0",
     "normalize.css": "8.0.1",
     "typed.js": "2.0.11",
